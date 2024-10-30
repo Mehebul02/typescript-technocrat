@@ -17,4 +17,4 @@ const user: {
 }
 console.log(user);
 
-user.company='Bdcalling'
+// user.company='Bdcalling'
