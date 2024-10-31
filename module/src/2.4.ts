@@ -1,33 +1,48 @@
 
+{
+
+    // spread operator
+    /// rest operator
+    // destructuring operator 
 
 
-// spread operator
-/// rest operator
-// destructuring operator 
+    let bros1: string[] = ['Alif', 'Ried', 'Ashikur'];
+    let bros2: string[] = ['Mehebul', 'Apo', 'Mithan'];
+
+    bros1.push(...bros2)
+    console.log(bros1);
 
 
-let bros1:string[] = ['Alif','Ried','Ashikur'];
-let bros2 :string[]= ['Mehebul','Apo', 'Mithan'];
+    const teamDevWizard = {
+        member1: 'Mehebul Alif',
+        member2: 'Ried Mia',
+        member3: 'Ashikur Rahman',
+        member4: 'Rohamot Rahman'
+    }
 
-bros1.push(...bros2)
-console.log(bros1);
+    const teamCodex = {
+        member1: 'Tanvir',
+        member2: 'Billal',
+        member3: 'Abtaha',
+        member4: 'Aminul'
+    }
+
+    const memberList = {
+        ...teamDevWizard,
+        ...teamCodex,
+    }
 
 
-const teamDevWizard = {
-    member1:'Mehebul Alif',
-    member2:'Ried Mia',
-    member3:'Ashikur Rahman',
-    member4:'Rohamot Rahman'
-}
+    // learn rest operator 
 
-const teamCodex={
-    member1:'Tanvir',
-    member2:'Billal',
-    member3:'Abtaha',
-    member4:'Aminul'
-}
+    const greetFriends = (...friends:string[]) => {
+        // console.log(`Hi ${friend1} ${friend2} ${friend3}`);
+        friends.forEach((friend: string) => console.log(`Hi ${friend}`);)
+    }
 
-const memberList ={
-    ...teamDevWizard,
-    ...teamCodex,
+    greetFriends('Alif', 'Ashikur', 'Mitahan')
+
+
+
+
 }
