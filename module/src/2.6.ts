@@ -1,5 +1,5 @@
 
-
+{
 // type alias 
 
 type Student={
@@ -16,4 +16,9 @@ const student1:Student={
     gender:'melel',
     contactNo:'01654555545',
     address:'ctg'
+}
+
+type Add=(num1:number,num2:number)=>number
+const add:Add =(num1,num2)=>num1+num2
+
 }
