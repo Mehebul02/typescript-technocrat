@@ -9,4 +9,4 @@ const user = {
     isMarried: false
 };
 console.log(user);
-user.company = 'Bdcalling';
+// user.company='Bdcalling'
