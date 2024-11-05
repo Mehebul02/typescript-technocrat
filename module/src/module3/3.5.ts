@@ -17,7 +17,7 @@
         };
 
         addDeposit(amount: number) {
-            this._balance = this.balance + amount
+            this._balance = this._balance + amount
         }
         getBalance() {
             return this._balance
@@ -51,7 +51,7 @@
 
 
 
-    
+
     // const personalAccount2 = new BankAccount(11147, 'Mr . Riead Mia', 500);
     // personalAccount.addDeposit(44)
     // personalAccount2.addDeposit(79000)
