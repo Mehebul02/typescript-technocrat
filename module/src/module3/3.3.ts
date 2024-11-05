@@ -12,7 +12,9 @@
         if(typeof params1  === 'number' &&  params2 === 'number'){
             return params1 + params2
         }else{
-          return  params1.toString + params2.toString()
+          return  params1.toString() + params2.toString()
         }
-    }
+    };
+    const result1 = add(6,9)
+    console.log(result1);
 }
