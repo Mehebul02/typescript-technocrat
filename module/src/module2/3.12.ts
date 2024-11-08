@@ -19,7 +19,7 @@
         }
     }
 
-    const getSleepHours(param:Person)=>{
+    const getSleepHours(param: Person) => {
         param.getSleep()
     }
 
@@ -30,4 +30,21 @@
     getSleepHours(person1)
     getSleepHours(person2)
     getSleepHours(person3)
+
+
+
+    // pi * r*r
+
+    class Circle {
+        radius: number;
+        constructor(radius: number) {
+            // super();
+            this.radius = radius
+        }
+
+        getArea(): number {
+            return Math.PI * this.radius * this.radius
+
+        }
+    }
 }
