@@ -25,15 +25,15 @@
 
     type BackEndDeveloper={
         skills:string[]
-        designation2:'Backend Developer'
+        designation2:'Backend Developer' //Type Alias
     }
 
     type FullStackDeveloper =FrontEndDeveloper & BackEndDeveloper
 
     const fullStackDeveloper:FullStackDeveloper={
         skills:['html','css'],
-        designation1:'Fronent Developer',
-        designation2:'Backend Developer'
+        designation1:'Fronent Developer', //Type Alias
+        designation2:'Backend Developer' //Type alias
     }
 }
 

@@ -15,3 +15,17 @@ const student2 = addCourseToStudent({ name: 'Mr. X', email: 'mehebul2122@gmail.c
 const student3 = addCourseToStudent({name:'mehebul',email:'jdkdj'})
 
 console.log(student1);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
