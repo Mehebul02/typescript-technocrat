@@ -2,6 +2,8 @@
 
     // Polymorphism
 
+  
+
     class Person {
         getSleep() {
             console.log(`I am sleeping for 8 hour per day`);
@@ -35,10 +37,16 @@
 
     // pi * r*r
 
-    class Circle {
+    class Shape{
+        getArea():number{
+            return 0
+        }
+    }
+
+    class Circle  extends Shape{
         radius: number;
         constructor(radius: number) {
-            // super();
+            super();
             this.radius = radius
         }
 
@@ -47,4 +55,33 @@
 
         }
     }
+
+    // rectangular
+    
+    class Rectangle  extends Shape{
+        width: number;
+        height:number
+        constructor(width: number, height:number) {
+            super();
+            this.width = width
+            this.height = height
+        }
+
+        getArea(): number {
+            return this.width * this.height
+
+        }
+
+    }
+    const getShapeArea=(param:Shape)=>{
+        console.log(param.getArea());
+    }
+
+    const shape1 =new Shape()
+    const shape2 = new Circle(10)
+    const shape3 = new Rectangle(44,88)
+
+    getShapeArea(shape1)
+    getShapeArea(shape2)
+    getShapeArea(shape3)
 }
